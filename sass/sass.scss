@@ -3,7 +3,8 @@
 @import "article";
 @import "section";
 @import "galeria";
-
+@import "nosotros";
+@import "contacto";
 
 /*Index, ALGUNAS PAGINAS COMPARTEN CLASES PARA RESUMIR CODIGOS */
 
@@ -25,16 +26,7 @@
 
 
 
-/*Nosotros*/
-.video-promo{
-    display: flex;
-    justify-content: center;
-}
-
-iframe{
-    width: 500px;
-    height: 700px;
-}
+/*Nosotr
 
 
 /* contactanos, formulario */
@@ -45,102 +37,27 @@ iframe{
     object-fit: cover;
 }
 
-h3{
-    font-size: 30px;
-    color: white;
-    text-align: end;
-    font-weight: bolder;
-    padding: 100px;
-}
 
-.section-form{
-    color: white;
-    padding: 50px 15px;
-}
-.content{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-}
 
-.form{
-    text-align: center;
-    font-size: 50px;
 
-}
 
-.contact-wrapper{
-    box-shadow: 0 0 20px 0 rgba(223, 191, 9, 0.979); 
-} 
 
-.contact-wrapper > * {
-    padding: 100px;
-}
 
-.contact-form{
-    background-color: #222222;
-}
 
-.p-form{
-    margin: 35px;
-}
 
-h4{
-    text-align: center;
-    font-size: bolder;
-    padding: 15px 0;
-    font-size: 25px;
-}
 
-.contact-info{
-    background-color: black;
-}
 
-.contact-form form{
-    margin: 0;
-    padding: 15px;
-}
 
-.contact-form form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5px;
-}
-.contact-form form .block{
-    grid-column: 1 / 3;
-}
 
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea{
-    width: 100%;
-    padding: 15px;
-    border: none;
-    background-color: #222222;
-    outline: 0;
-    border-bottom: 1px solid #dab901;
-    color: white;
-}
 
-.contact-form form button{
-    background-color: #dab901;
-    color: black;
-    border: 0;
-    font-weight: bolder;
-    text-transform: uppercase;
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 15px;
-}
 
-.contact-form form button:hover,
-.contact-form form button:focus{
-    background-color: #333;
-    color: white;
-    transition: background-color 1s ease-out;
-    outline: 0;
-}
+
+
+
+
+
+
+
 
 /*footer, todas las paginas  */
 
