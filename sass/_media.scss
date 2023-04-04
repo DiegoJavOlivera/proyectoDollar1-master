@@ -1,8 +1,10 @@
 @media (max-width: 1000px){
+    //navbar
     .navbar-brand{
         display: flex;
         justify-content: end;
     }
+    //Galeria
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
         
@@ -25,28 +27,28 @@
         }
     }
     
-    
-    iframe{
+    //nosotros
+    article{
+        .video-promo{
+        display: flex;
+        justify-content: center;
+        
+        
+        iframe{
         margin: 0 0 0 50px;
         width: 300px;
         height: 300px;
+        }
+        h1{
+            margin: 30px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            line-height: 1;
+            font-weight: bolder;
+        }
     }
-    
-    h1{
-        margin: 30px;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-        line-height: 1;
-        font-weight: bolder;
-    }
-    
-
-    video{
-        width: 300px;
-        height: 300px;
-    }
-    
+//index
     .parrafo-index{
         padding: 15px;
         color: white;
@@ -54,58 +56,158 @@
         font-size: 25px;
     
     }
+
+    video{
+        width: 300px;
+        height: 300px;
+    }
+}
+
     
-    .parrafo-section p{
+    .parrafo-section {
+            p{
         padding: 80px;
         color: white;
         font-size: 20px;
         text-align: center;
         line-height: 2;
     } 
-    
-    h3{
+}
 
+//formulario
+    .section-form{
         color: white;
-        text-align: end;
-        font-size: bolder;
-        padding: 15px 0;
-        font-size: 25px;
-    }
-    .contact-info{
-        background-color: black;
+        padding: 50px 15px;
+    
+        .content{
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        
+            .contact-wrapper{
+                box-shadow: 0 0 20px 0 rgba(223, 191, 9, 0.979); 
+            
+            
+                .contact-form{
+                    background-color: #222222;
+                    .form{
+                        margin-left: 85px;
+                        margin-right: 104px;
+                        font-size: 30px;
+                        color: white;
+                        font-weight: bolder;
+                        padding: 100px;
+                        text-align: center;
+                        font-size: 50px;
+                
+                    }
+                    form{
+                        margin: 0;
+                        padding: 15px;
+                    }
+                    form{
+                        display: grid;
+                        grid-template-columns: 1fr ;
+                        padding: 5px;
+                    
+                        .p-form{
+                            margin: 35px;
+                            textarea{
+                                width: 100%;
+                                padding: 15px;
+                                border: none;
+                                background-color: #222222;
+                                outline: 0;
+                                border-bottom: 1px solid #dab901;
+                                color: white;                            
+                            }
+                            input{
+                                width: 100%;
+                                padding: 15px;
+                                border: none;
+                                background-color: #222222;
+                                outline: 0;
+                                border-bottom: 1px solid #dab901;
+                                color: white;
+                            }
+                            button{
+                                width: 50%;
+                                padding: 15px;
+                                border: none;
+                                background-color: #222222;
+                                outline: 0;
+                                border-bottom: 1px solid #dab901;
+                                color: white;
+                            }
+                        }
+                        button{
+                            background-color: #dab901;
+                            color: black;
+                            border: 0;
+                            font-weight: bolder;
+                            text-transform: uppercase;
+                            margin-top: 15px;
+                            padding: 15px;
+                            border-radius: 15px;
+                        
+                        
+                            &:hover{
+                                background-color: #333;
+                                color: white;
+                                transition: background-color 1s ease-out;
+                                outline: 0;
+                            }
+                            &:focus{
+                                background-color: #333;
+                                color: white;
+                                transition: background-color 1s ease-out;
+                                outline: 0;
+                            }
+                        }
+                        .block{
+                            grid-column: 1 / 2;
+                        }
+                    }
+                
+                }
+            
+                .contact-info{
+                    background-color: black;
+                    h4{
+                        text-align: center;
+                        font-size: bolder;
+                        padding: 15px 0;
+                        font-size: 15px;
+                    }
+                
+                }
+                > * {
+                    padding: 100px;
+                }
+            } 
+        }
+    
     }
 
-    .form{
-        margin-left: 85px;
-        margin-right: 104px;
-        font-size: 50px;
-    
-    }
-    
-    .contact-form form{
-        margin: 0;
-        padding: 15px;
-    }
-    
-    .contact-form form{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 5px;
-    }
-    .contact-form form .block{
-        grid-column: 1 / 2;
-    }
-    
+    footer{
+            .redes-container{
+                    ul{
+                    margin-bottom: -5rem;
+                }      
+            }
 
-    .redes-container ul{
-        margin-bottom: -5rem;
+            div{
+                ul{
+                    .pie-p{
+                        p{
+                            font-size: 15px;
+                        }
+                        }  
+                    }
+                }
+        }  
     }
-    
-    .pie-p{
-        font-size: 15px;
-    }
-    
-}  
 
 
 @media (max-width: 768px) {
@@ -139,60 +241,172 @@
         object-fit: cover;
     }
     
-
-    
-
-    
-    iframe{
+    article{
+        iframe{
         margin: 0 0 0 50px;
         width: 300px;
         height: 300px;
+        }
+        video{
+            width: 300px;
+            height: 300px;
+        }
+        .parrafo-index{
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+        
+        }
+        h1{
+            margin: 30px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            line-height: 1;
+            font-weight: bolder;
+        }
     }
-    
-    h1{
-        margin: 30px;
-        text-align: center;
+    .section-form{
         color: white;
-        font-size: 30px;
-        line-height: 1;
-        font-weight: bolder;
+        padding: 50px 15px;
+    
+        .content{
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        
+            .contact-wrapper{
+                box-shadow: 0 0 20px 0 rgba(223, 191, 9, 0.979); 
+            
+            
+                .contact-form{
+                    background-color: #222222;
+                    .form{
+                        margin-left: -155px;
+                        margin-right: 104px;
+                        font-size: 30px;
+                        color: white;
+                        font-weight: bolder;
+                        padding: 100px;
+                        text-align: center;
+                        font-size: 35px;
+                
+                    }
+                    form{
+                        margin: 0;
+                        padding: 15px;
+                    }
+                    form{
+                        display: grid;
+                        grid-template-columns: 1fr ;
+                        padding: 5px;
+                    
+                        .p-form{
+                            padding:15px ;
+                            margin: 0px;
+                            textarea{
+                                width: 100%;
+                                padding: 15px;
+                                border: none;
+                                background-color: #222222;
+                                outline: 0;
+                                border-bottom: 1px solid #dab901;
+                                color: white;                            
+                            }
+                            input{
+                                width: 100%;
+                                padding: 15px;
+                                border: none;
+                                background-color: #222222;
+                                outline: 0;
+                                border-bottom: 1px solid #dab901;
+                                color: white;
+                            }
+                            button{
+                                width: 50%;
+                                padding: 15px;
+                                border: none;
+                                background-color: #222222;
+                                outline: 0;
+                                border-bottom: 1px solid #dab901;
+                                color: white;
+                            }
+                        }
+                        button{
+                            background-color: #dab901;
+                            color: black;
+                            border: 0;
+                            font-weight: bolder;
+                            text-transform: uppercase;
+                            margin-top: 15px;
+                            padding: 15px;
+                            border-radius: 15px;
+                        
+                        
+                            &:hover{
+                                background-color: #333;
+                                color: white;
+                                transition: background-color 1s ease-out;
+                                outline: 0;
+                            }
+                            &:focus{
+                                background-color: #333;
+                                color: white;
+                                transition: background-color 1s ease-out;
+                                outline: 0;
+                            }
+                        }
+                        .block{
+                            grid-column: 1 / 2;
+                        }
+                    }
+                
+                }
+            
+                .contact-info{
+                    background-color: black;
+                    h4{
+                        text-align: center;
+                        font-size: bolder;
+                        padding: 15px 0;
+                        font-size: 15px;
+                    }
+                
+                }
+                > * {
+                    padding: 100px;
+                }
+            } 
+        }
+    
     }
     
-
-    video{
-        width: 300px;
-        height: 300px;
-    }
-    
-    .parrafo-index{
-        padding: 15px;
-        color: white;
-        text-align: center;
-        font-size: 25px;
-    
-    }
-    
-    .parrafo-section p{
+    .parrafo-section{
+        p{
         padding: 80px;
         color: white;
         font-size: 20px;
         text-align: center;
         line-height: 2;
-    } 
-    
-    .redes-container ul{
-        margin-bottom: -5rem;
-        margin-right: 20px;
-    }
-    
-    .form{
-        margin-left: -145px;
-        margin-right: 104px;
-        font-size: 35px;
-    
-    }
+        } 
+    }   
+    footer{
+        .redes-container{
+                ul{
+                margin-bottom: -5rem;
+            }      
+        }
 
-    .pie-p{
-        font-size: 15px;
-    }
-}   
+        div{
+            ul{
+                .pie-p{
+                    p{
+                        font-size: 15px;
+                    }
+                    }  
+                }
+            }
+    }  
+}

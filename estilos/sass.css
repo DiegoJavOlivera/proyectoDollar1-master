@@ -97,22 +97,20 @@ img {
   grid-column-end: 3;
 }
 
-.video-promo {
+main article .video-promo {
   display: flex;
   justify-content: center;
 }
-
-iframe {
+main article iframe {
   width: 500px;
   height: 700px;
 }
-
-h3 {
+main article .firma {
   color: white;
   text-align: end;
-  font-size: bolder;
+  font-size: 20px;
   padding: 15px 0;
-  font-size: 25px;
+  font-weight: bolder;
 }
 
 .section-form {
@@ -234,7 +232,7 @@ footer .redes-container li {
   height: 50px;
   text-align: center;
 }
-footer .redes-container li a {
+footer .redes-container li .facebook {
   display: block;
   padding: 0 10px;
   background: #333;
@@ -245,8 +243,42 @@ footer .redes-container li a {
   transition: 0.2s;
   border-radius: 15px;
 }
-footer .redes-container li a:hover {
-  background-color: #dab901;
+footer .redes-container li .facebook:hover {
+  background-color: #4267B2;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+footer .redes-container li .instagram {
+  display: block;
+  padding: 0 10px;
+  background: #333;
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  border-radius: 15px;
+}
+footer .redes-container li .instagram:hover {
+  background-color: #C13584;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+footer .redes-container li .whatsapp {
+  display: block;
+  padding: 0 10px;
+  background: #333;
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  border-radius: 15px;
+}
+footer .redes-container li .whatsapp:hover {
+  background-color: #25D366;
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
   filter: none;
@@ -280,12 +312,16 @@ footer .pie-p {
     display: flex;
     justify-content: center;
   }
-  iframe {
+  article .video-promo {
+    display: flex;
+    justify-content: center;
+  }
+  article .video-promo iframe {
     margin: 0 0 0 50px;
     width: 300px;
     height: 300px;
   }
-  h1 {
+  article .video-promo h1 {
     margin: 30px;
     text-align: center;
     color: white;
@@ -293,15 +329,15 @@ footer .pie-p {
     line-height: 1;
     font-weight: bolder;
   }
-  video {
-    width: 300px;
-    height: 300px;
-  }
-  .parrafo-index {
+  article .parrafo-index {
     padding: 15px;
     color: white;
     text-align: center;
     font-size: 25px;
+  }
+  article video {
+    width: 300px;
+    height: 300px;
   }
   .parrafo-section p {
     padding: 80px;
@@ -310,37 +346,112 @@ footer .pie-p {
     text-align: center;
     line-height: 2;
   }
-  h3 {
+  .section-form {
     color: white;
-    text-align: end;
-    font-size: bolder;
-    padding: 15px 0;
-    font-size: 25px;
+    padding: 50px 15px;
   }
-  .contact-info {
-    background-color: black;
+  .section-form .content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
   }
-  .form {
+  .section-form .content .contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(223, 191, 9, 0.979);
+  }
+  .section-form .content .contact-wrapper .contact-form {
+    background-color: #222222;
+  }
+  .section-form .content .contact-wrapper .contact-form .form {
     margin-left: 85px;
     margin-right: 104px;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    padding: 100px;
+    text-align: center;
     font-size: 50px;
   }
-  .contact-form form {
+  .section-form .content .contact-wrapper .contact-form form {
     margin: 0;
     padding: 15px;
   }
-  .contact-form form {
+  .section-form .content .contact-wrapper .contact-form form {
     display: grid;
     grid-template-columns: 1fr;
     padding: 5px;
   }
-  .contact-form form .block {
+  .section-form .content .contact-wrapper .contact-form form .p-form {
+    margin: 35px;
+  }
+  .section-form .content .contact-wrapper .contact-form form .p-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #222222;
+    outline: 0;
+    border-bottom: 1px solid #dab901;
+    color: white;
+  }
+  .section-form .content .contact-wrapper .contact-form form .p-form input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #222222;
+    outline: 0;
+    border-bottom: 1px solid #dab901;
+    color: white;
+  }
+  .section-form .content .contact-wrapper .contact-form form .p-form button {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    background-color: #222222;
+    outline: 0;
+    border-bottom: 1px solid #dab901;
+    color: white;
+  }
+  .section-form .content .contact-wrapper .contact-form form button {
+    background-color: #dab901;
+    color: black;
+    border: 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .section-form .content .contact-wrapper .contact-form form button:hover {
+    background-color: #333;
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+  }
+  .section-form .content .contact-wrapper .contact-form form button:focus {
+    background-color: #333;
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+  }
+  .section-form .content .contact-wrapper .contact-form form .block {
     grid-column: 1/2;
   }
-  .redes-container ul {
+  .section-form .content .contact-wrapper .contact-info {
+    background-color: black;
+  }
+  .section-form .content .contact-wrapper .contact-info h4 {
+    text-align: center;
+    font-size: bolder;
+    padding: 15px 0;
+    font-size: 15px;
+  }
+  .section-form .content .contact-wrapper > * {
+    padding: 100px;
+  }
+  footer .redes-container ul {
     margin-bottom: -5rem;
   }
-  .pie-p {
+  footer div ul .pie-p p {
     font-size: 15px;
   }
 }
@@ -372,12 +483,22 @@ footer .pie-p {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  iframe {
+  article iframe {
     margin: 0 0 0 50px;
     width: 300px;
     height: 300px;
   }
-  h1 {
+  article video {
+    width: 300px;
+    height: 300px;
+  }
+  article .parrafo-index {
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+  }
+  article h1 {
     margin: 30px;
     text-align: center;
     color: white;
@@ -385,15 +506,108 @@ footer .pie-p {
     line-height: 1;
     font-weight: bolder;
   }
-  video {
-    width: 300px;
-    height: 300px;
-  }
-  .parrafo-index {
-    padding: 15px;
+  .section-form {
     color: white;
+    padding: 50px 15px;
+  }
+  .section-form .content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+  .section-form .content .contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(223, 191, 9, 0.979);
+  }
+  .section-form .content .contact-wrapper .contact-form {
+    background-color: #222222;
+  }
+  .section-form .content .contact-wrapper .contact-form .form {
+    margin-left: -155px;
+    margin-right: 104px;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    padding: 100px;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
+  }
+  .section-form .content .contact-wrapper .contact-form form {
+    margin: 0;
+    padding: 15px;
+  }
+  .section-form .content .contact-wrapper .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+  }
+  .section-form .content .contact-wrapper .contact-form form .p-form {
+    padding: 15px;
+    margin: 0px;
+  }
+  .section-form .content .contact-wrapper .contact-form form .p-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #222222;
+    outline: 0;
+    border-bottom: 1px solid #dab901;
+    color: white;
+  }
+  .section-form .content .contact-wrapper .contact-form form .p-form input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #222222;
+    outline: 0;
+    border-bottom: 1px solid #dab901;
+    color: white;
+  }
+  .section-form .content .contact-wrapper .contact-form form .p-form button {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    background-color: #222222;
+    outline: 0;
+    border-bottom: 1px solid #dab901;
+    color: white;
+  }
+  .section-form .content .contact-wrapper .contact-form form button {
+    background-color: #dab901;
+    color: black;
+    border: 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .section-form .content .contact-wrapper .contact-form form button:hover {
+    background-color: #333;
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+  }
+  .section-form .content .contact-wrapper .contact-form form button:focus {
+    background-color: #333;
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+  }
+  .section-form .content .contact-wrapper .contact-form form .block {
+    grid-column: 1/2;
+  }
+  .section-form .content .contact-wrapper .contact-info {
+    background-color: black;
+  }
+  .section-form .content .contact-wrapper .contact-info h4 {
+    text-align: center;
+    font-size: bolder;
+    padding: 15px 0;
+    font-size: 15px;
+  }
+  .section-form .content .contact-wrapper > * {
+    padding: 100px;
   }
   .parrafo-section p {
     padding: 80px;
@@ -402,16 +616,10 @@ footer .pie-p {
     text-align: center;
     line-height: 2;
   }
-  .redes-container ul {
+  footer .redes-container ul {
     margin-bottom: -5rem;
-    margin-right: 20px;
   }
-  .form {
-    margin-left: -145px;
-    margin-right: 104px;
-    font-size: 35px;
-  }
-  .pie-p {
+  footer div ul .pie-p p {
     font-size: 15px;
   }
 }/*# sourceMappingURL=sass.css.map */

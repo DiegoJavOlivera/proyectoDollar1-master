@@ -1,19 +1,22 @@
-.video-promo{
-    display: flex;
-    justify-content: center;
-}
+main{
+    article{
+        .video-promo{
+            display: flex;
+            justify-content: center;
+        }
 
 
-iframe{
-    width: 500px;
-    height: 700px;
-}
+        iframe{
+            width: 500px;
+            height: 700px;
+        }
 
-h3{
-    
-    color: white;
-    text-align: end;
-    font-size: bolder;
-    padding: 15px 0;
-    font-size: 25px;
+        .firma{
+            color: white;
+            text-align: end;
+            font-size: 20px;
+            padding: 15px 0;
+            font-weight: bolder;
+        }
+    }
 }
