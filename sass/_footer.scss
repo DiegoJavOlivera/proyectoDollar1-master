@@ -1,6 +1,7 @@
 footer{
-    background-color: #dab901;
-    color: black;
+    //inclui mixin
+    @include fondo;
+    color: white;
     .redes-container{
         display: flex;
         height:  24vh;
@@ -73,8 +74,9 @@ footer{
                 }
             }
         }
+        //inclui mixin
         .pie-p {
-            color: black;
+            @include textofooter;
             display: flex;
             justify-content: center;
             font-size: 20px;
