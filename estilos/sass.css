@@ -317,9 +317,9 @@ footer .pie-p {
     justify-content: center;
   }
   article .video-promo iframe {
-    margin: 0 0 0 50px;
-    width: 300px;
-    height: 300px;
+    margin: 0 0 0 12px;
+    width: 269px;
+    height: 429px;
   }
   article .video-promo h1 {
     margin: 30px;
@@ -489,7 +489,8 @@ footer .pie-p {
     height: 300px;
   }
   article video {
-    width: 300px;
+    margin: 0 0 0;
+    width: 268px;
     height: 300px;
   }
   article .parrafo-index {
